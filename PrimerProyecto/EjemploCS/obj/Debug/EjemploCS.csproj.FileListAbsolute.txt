@@ -1,0 +1,9 @@
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\bin\Debug\EjemploCS.exe.config
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\bin\Debug\EjemploCS.exe
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\bin\Debug\EjemploCS.pdb
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\obj\Debug\EjemploCS.csprojResolveAssemblyReference.cache
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\obj\Debug\EjemploCS.Form1.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\obj\Debug\EjemploCS.Properties.Resources.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\obj\Debug\EjemploCS.csproj.GenerateResource.Cache
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\obj\Debug\EjemploCS.exe
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploCS\obj\Debug\EjemploCS.pdb

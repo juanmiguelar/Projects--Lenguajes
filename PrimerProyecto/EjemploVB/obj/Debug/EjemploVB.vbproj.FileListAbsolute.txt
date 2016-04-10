@@ -1,0 +1,13 @@
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\bin\Debug\EjemploVB.exe.config
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\bin\Debug\EjemploVB.exe
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\bin\Debug\EjemploVB.pdb
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\bin\Debug\EjemploVB.xml
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.vbprojResolveAssemblyReference.cache
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.Resources.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.Principal.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.vbproj.GenerateResource.Cache
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.exe
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.xml
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.pdb
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.acercaDe.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerProyecto\EjemploVB\obj\Debug\EjemploVB.ProductForm.resources

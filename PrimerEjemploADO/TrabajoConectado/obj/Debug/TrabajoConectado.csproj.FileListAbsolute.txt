@@ -1,0 +1,9 @@
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\bin\Debug\TrabajoConectado.exe.config
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\bin\Debug\TrabajoConectado.exe
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\bin\Debug\TrabajoConectado.pdb
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.csprojResolveAssemblyReference.cache
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.Form1.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.Properties.Resources.resources
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.csproj.GenerateResource.Cache
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.exe
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.pdb
