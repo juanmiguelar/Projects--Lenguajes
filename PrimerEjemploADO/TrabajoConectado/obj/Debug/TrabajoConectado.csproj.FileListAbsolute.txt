@@ -7,3 +7,4 @@ D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciale
 D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.csproj.GenerateResource.Cache
 D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.exe
 D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.pdb
+D:\UCR\InformaticaEmpresarial\I. Ciclo 2016\Lenguajes de aplicaciones comerciales\Projects\PrimerEjemploADO\TrabajoConectado\obj\Debug\TrabajoConectado.ConsultaPersonas.resources

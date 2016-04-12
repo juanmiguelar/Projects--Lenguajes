@@ -40,9 +40,9 @@ namespace TrabajoConectado
             // Creamos un objeto sqlconnection para poder conectarnos a la base de datos
             SqlConnection sqlConnection = new SqlConnection();
             //Es la manera de poder entrar a nuestra base de datos
-            String connectionString = "Data Source=.\\sql2014;Initial Catalog=AdventureWorks2012;Integrated Security=true";
+            //String connectionString = "Data Source=.\\sql2014;Initial Catalog=AdventureWorks2012;Integrated Security=true";
             // Logramos poner el connectionString el property adecuado para la conexion a la base de datos
-            sqlConnection.ConnectionString = connectionString;
+            sqlConnection.ConnectionString = TrabajoConectado.Properties.Settings.Default.connectionString;
 
             // Necesito la sentencia de SQL que vamos a ejecutar.
             SqlCommand commander = new SqlCommand();
