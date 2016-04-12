@@ -41,7 +41,8 @@ namespace TrabajoConectado
             sqlConnection.ConnectionString = TrabajoConectado.Properties.Settings.Default.connectionString;
 
             SqlCommand commander = new SqlCommand(query, sqlConnection);
-            commander.Parameters.AddWithValue("Criterio", buscar);
+            // Indicamos el parametro y su valor
+            commander.Parameters.AddWithValue("Criterio", "%" + buscar + "%");
 
 
             // Verificar si la conexion esta abierta
