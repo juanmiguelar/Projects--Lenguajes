@@ -22,21 +22,26 @@ namespace TrabajoConectado
         }
 
         private void ConsultaPersonas_Load(object sender, EventArgs e)
-        {
+        { 
 
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
             dataPerson = new DataTable();
             // El data table por defecto no puede tener columnas
-            dataPerson.Columns.Add("name");
-            dataPerson.Columns.Add("lastName");
+            dataPerson.Columns.Add("FirstName");
+            dataPerson.Columns.Add("LastName");
 
 
             String buscar = txtCriterio.Text;
-            String query = "SELECT FirstName, LastName FROM Person.Person WHERE FirstName LIKE '%" + buscar + "%' OR LastName Like '%" + buscar + "%'";
+            String query = "SELECT FirstName, LastName FROM Person WHERE FirstName LIKE @Criterio OR LastName Like @Criterio";
 
             SqlConnection sqlConnection = new SqlConnection();
             sqlConnection.ConnectionString = TrabajoConectado.Properties.Settings.Default.connectionString;
 
             SqlCommand commander = new SqlCommand(query, sqlConnection);
+            commander.Parameters.AddWithValue("Criterio", buscar);
 
 
             // Verificar si la conexion esta abierta
@@ -52,7 +57,7 @@ namespace TrabajoConectado
                 // True en caso de que hayan más filas
                 // False si ya no tiene más filas que leer
                 while (reader.Read())
-                { 
+                {
                     String firstName, lastName;
 
                     // El valor entre los parentesis cuadrados es el nombre de la columna
@@ -68,7 +73,6 @@ namespace TrabajoConectado
                 sqlConnection.Close();
 
             dataGridView1.DataSource = dataPerson;
-
         }
     }
 }

@@ -26,8 +26,7 @@ namespace TrabajoConectado.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\sql2014;Initial Catalog=AdventureWorks2012;Integrated Security=true" +
-            "")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\sql2014;Initial Catalog=EjemploInjection;Integrated Security=true")]
         public string connectionString {
             get {
                 return ((string)(this["connectionString"]));
