@@ -85,4 +85,14 @@ Public Class Form1
 
         Return retorno
     End Function
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'EjemploTipado.Person' table. You can move, or remove it, as needed.
+        Me.PersonTableAdapter.Fill(Me.EjemploTipado.Person)
+        ' Creo un objeto del tipo de la tabla que creamos
+        Dim x As New EjemploTipado.TablePersonas1DataTable
+        x.AddTablePersonas1Row(1, "Juan", "Perez")
+        x.AddTablePersonas1Row(2, "AnaTeresa", "Quesada")
+        x.AddTablePersonas1Row(3, "Mimi", "Perez")
+    End Sub
 End Class
