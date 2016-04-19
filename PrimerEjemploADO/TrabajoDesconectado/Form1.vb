@@ -32,7 +32,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-
+        ' Esto es lo que hace que se guarden los cambios en la base de datos
         adaptador.Update(tablaDatos)
     End Sub
 
@@ -67,10 +67,14 @@ Public Class Form1
     End Function
 
     Private Function crearUpdate() As SqlCommand
-        Dim retorno As New SqlCommand("UPDATE Personas SET Nombre=@nombre, Apellido=@apellido WHERE Codigo=@cod", conexion)
+        Dim retorno As New SqlCommand()
+        retorno.Connection = conexion
+        retorno.CommandType = CommandType.StoredProcedure
+        retorno.CommandText = "ModificarPersonas"
+
 
         ' Es un objeto de tipo parametro que nos va a ayudar a ingresar el parametro a la sentencia
-        Dim paramCod As New SqlParameter("cod", SqlDbType.Int, 4, "Codigo")
+        Dim paramCod As New SqlParameter("codigo", SqlDbType.Int, 4, "Codigo")
         Dim paramNombre As New SqlParameter("nombre", SqlDbType.NVarChar, 50, "Nombre")
         Dim paramApellido As New SqlParameter("apellido", SqlDbType.NVarChar, 50, "Apellido")
 
