@@ -72,10 +72,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrearDisenno.Designer.vb">
+    <Compile Include="Disennos\CrearDisenno.Designer.vb">
       <DependentUpon>CrearDisenno.vb</DependentUpon>
     </Compile>
-    <Compile Include="CrearDisenno.vb">
+    <Compile Include="Disennos\CrearDisenno.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -99,10 +99,19 @@
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Disennos\VerDisennos.Designer.vb">
+      <DependentUpon>VerDisennos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Disennos\VerDisennos.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CrearDisenno.resx">
+    <EmbeddedResource Include="Disennos\CrearDisenno.resx">
       <DependentUpon>CrearDisenno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disennos\VerDisennos.resx">
+      <DependentUpon>VerDisennos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -9,6 +9,14 @@ Public Class Principal
         crearDisenno.MdiParent = Me
         ' muestro la ventana que quiero mostrar
         crearDisenno.Show()
+    End Sub
 
+    Private Sub VerToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles VerToolStripMenuItem1.Click
+        ' Creo la instancia de lo que quiero mostrar
+        Dim verDisennos As VerDisennos = New VerDisennos
+        ' Le digo que su padre es la ventana actual
+        verDisennos.MdiParent = Me
+        ' Muestro la ventana
+        verDisennos.Show()
     End Sub
 End Class
