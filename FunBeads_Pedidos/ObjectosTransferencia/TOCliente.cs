@@ -4,25 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logica
+namespace ObjectosTransferencia
 {
-    public class Cliente : Guardable
+    public class TOCliente
     {
-
         public int ID_Cliente { get; set; }
         public String Nombre { get; set; }
 
-        public Cliente() {
+        public TOCliente()
+        {
 
         }
 
-        public Cliente(int id, String nombre) {
+        public TOCliente(int id, String nombre)
+        {
             this.ID_Cliente = id;
             this.Nombre = nombre;
-        }
-        
-        public int guardar() {
-            return 0;
         }
     }
 }
