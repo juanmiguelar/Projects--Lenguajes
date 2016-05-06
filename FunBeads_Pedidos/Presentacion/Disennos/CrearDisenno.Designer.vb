@@ -24,8 +24,8 @@ Partial Class CrearDisenno
     Private Sub InitializeComponent()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblDescripcion = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtDescripcion = New System.Windows.Forms.TextBox()
         Me.rbtn26mm = New System.Windows.Forms.RadioButton()
         Me.rbtn5mm = New System.Windows.Forms.RadioButton()
         Me.btnAceptar = New System.Windows.Forms.Button()
@@ -54,24 +54,24 @@ Partial Class CrearDisenno
         Me.lblDescripcion.TabIndex = 1
         Me.lblDescripcion.Text = "Descripción: "
         '
-        'TextBox1
+        'txtNombre
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(255, 114)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(277, 26)
-        Me.TextBox1.TabIndex = 2
+        Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(255, 114)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(277, 26)
+        Me.txtNombre.TabIndex = 2
         '
-        'TextBox2
+        'txtDescripcion
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(255, 185)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(277, 119)
-        Me.TextBox2.TabIndex = 3
+        Me.txtDescripcion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescripcion.Location = New System.Drawing.Point(255, 185)
+        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtDescripcion.Multiline = True
+        Me.txtDescripcion.Name = "txtDescripcion"
+        Me.txtDescripcion.Size = New System.Drawing.Size(277, 119)
+        Me.txtDescripcion.TabIndex = 3
         '
         'rbtn26mm
         '
@@ -147,8 +147,8 @@ Partial Class CrearDisenno
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.rbtn5mm)
         Me.Controls.Add(Me.rbtn26mm)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtDescripcion)
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.lblDescripcion)
         Me.Controls.Add(Me.lblNombre)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -162,8 +162,8 @@ Partial Class CrearDisenno
 
     Friend WithEvents lblNombre As Label
     Friend WithEvents lblDescripcion As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtDescripcion As TextBox
     Friend WithEvents rbtn26mm As RadioButton
     Friend WithEvents rbtn5mm As RadioButton
     Friend WithEvents btnAceptar As Button
