@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InterfazGrafica
 {
-    public partial class Form1 : Form
+    public partial class RegistrarCliente : Form
     {
-        public Form1()
+        public RegistrarCliente()
         {
             InitializeComponent();
         }
