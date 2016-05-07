@@ -26,5 +26,14 @@ namespace ObjectosTransferencia
             this.Precio = Precio;
         }
 
+        public TODisenno(String Nombre, String Descripcion, String Tipo, int Precio)
+        {
+            
+            this.Nombre = Nombre;
+            this.Descripcion = Descripcion;
+            this.Tipo = Tipo;
+            this.Precio = Precio;
+        }
+
     }
 }

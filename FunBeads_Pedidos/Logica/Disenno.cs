@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ObjectosTransferencia;
+using EnlaceDatos;
 
 namespace Logica
 {
@@ -24,8 +26,25 @@ namespace Logica
             this.Precio = Precio;
         }
 
+        public Disenno(String Nombre, String Descripcion, String Tipo, int Precio)
+        {
+
+            this.Nombre = Nombre;
+            this.Descripcion = Descripcion;
+            this.Tipo = Tipo;
+            this.Precio = Precio;
+        }
+
         public int guardar() {
-            return 0;
+            DAODisenno daod = new DAODisenno();
+            TODisenno tod = new TODisenno(this.Nombre, this.Descripcion, this.Tipo, this.Precio);
+
+            tod = daod.guardar(tod);
+
+            this.ID_Disenno = tod.ID_Disenno;
+
+            return this.ID_Disenno;
+
         }
 
     }

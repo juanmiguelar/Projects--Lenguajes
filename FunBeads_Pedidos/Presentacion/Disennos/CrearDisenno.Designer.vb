@@ -32,6 +32,8 @@ Partial Class CrearDisenno
         Me.lblCrearDisenno = New System.Windows.Forms.Label()
         Me.lblPrecio = New System.Windows.Forms.Label()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.lblCod = New System.Windows.Forms.Label()
+        Me.txtCod = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblNombre
@@ -77,7 +79,7 @@ Partial Class CrearDisenno
         '
         Me.rbtn26mm.AutoSize = True
         Me.rbtn26mm.Checked = True
-        Me.rbtn26mm.Location = New System.Drawing.Point(109, 413)
+        Me.rbtn26mm.Location = New System.Drawing.Point(79, 413)
         Me.rbtn26mm.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.rbtn26mm.Name = "rbtn26mm"
         Me.rbtn26mm.Size = New System.Drawing.Size(75, 24)
@@ -89,7 +91,7 @@ Partial Class CrearDisenno
         'rbtn5mm
         '
         Me.rbtn5mm.AutoSize = True
-        Me.rbtn5mm.Location = New System.Drawing.Point(307, 413)
+        Me.rbtn5mm.Location = New System.Drawing.Point(235, 413)
         Me.rbtn5mm.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.rbtn5mm.Name = "rbtn5mm"
         Me.rbtn5mm.Size = New System.Drawing.Size(62, 24)
@@ -136,11 +138,30 @@ Partial Class CrearDisenno
         Me.txtPrecio.Size = New System.Drawing.Size(277, 26)
         Me.txtPrecio.TabIndex = 9
         '
+        'lblCod
+        '
+        Me.lblCod.AutoSize = True
+        Me.lblCod.Location = New System.Drawing.Point(387, 421)
+        Me.lblCod.Name = "lblCod"
+        Me.lblCod.Size = New System.Drawing.Size(67, 20)
+        Me.lblCod.TabIndex = 10
+        Me.lblCod.Text = "Codigo: "
+        '
+        'txtCod
+        '
+        Me.txtCod.Location = New System.Drawing.Point(486, 418)
+        Me.txtCod.Name = "txtCod"
+        Me.txtCod.ReadOnly = True
+        Me.txtCod.Size = New System.Drawing.Size(100, 26)
+        Me.txtCod.TabIndex = 11
+        '
         'CrearDisenno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(598, 569)
+        Me.Controls.Add(Me.txtCod)
+        Me.Controls.Add(Me.lblCod)
         Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.lblPrecio)
         Me.Controls.Add(Me.lblCrearDisenno)
@@ -170,4 +191,6 @@ Partial Class CrearDisenno
     Friend WithEvents lblCrearDisenno As Label
     Friend WithEvents lblPrecio As Label
     Friend WithEvents txtPrecio As TextBox
+    Friend WithEvents lblCod As Label
+    Friend WithEvents txtCod As TextBox
 End Class

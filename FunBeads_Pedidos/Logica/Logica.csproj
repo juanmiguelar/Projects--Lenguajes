@@ -46,6 +46,16 @@
     <Compile Include="Pedido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EnlaceDatos\EnlaceDatos.vbproj">
+      <Project>{aca4b1a9-91a2-4ae1-92c6-50b1fc6044f4}</Project>
+      <Name>EnlaceDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectosTransferencia\ObjectosTransferencia.csproj">
+      <Project>{55eb0610-e869-47c5-9043-695614cdf23d}</Project>
+      <Name>ObjectosTransferencia</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
