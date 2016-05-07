@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
 
 namespace InterfazGrafica
 {
@@ -15,6 +16,27 @@ namespace InterfazGrafica
         public RegistrarCliente()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            String cedula = txtCedula.Text;
+            String nombre = txtNombre.Text;
+
+            Cliente c = new Cliente(cedula, nombre);
+
+            try
+            {
+                c.guardar();
+                MessageBox.Show("Registrado!");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            
         }
     }
 }
