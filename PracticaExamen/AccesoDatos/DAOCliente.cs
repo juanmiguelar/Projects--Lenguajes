@@ -20,12 +20,9 @@ namespace AccesoDatos
         }
 
         public void guardar(TOCliente cliente) {
-            query = "INSERT INTO Clientes VALUES(@cedula, @nombre)";
-            comando = new SqlCommand(query, connection.connection);
 
-            comando.Parameters.AddWithValue("@cedula", cliente.Cedula);
-            comando.Parameters.AddWithValue("@nombre", cliente.Nombre);
-
+            comando = insertCommand(cliente);
+            
             try
             {
                 connection.abrir();
@@ -81,9 +78,19 @@ namespace AccesoDatos
 
         private SqlCommand selectCommand() {
 
-            query = "SELECT * FROM Clientes";
+            query = "SELECT * FROM Clientes ORDER BY NombreCompleto ASC";
 
             SqlCommand c = new SqlCommand(query, connection.connection);
+            return c;
+        }
+
+        private SqlCommand insertCommand(TOCliente cliente) {
+            query = "INSERT INTO Clientes VALUES(@cedula, @nombre)";
+            SqlCommand c = new SqlCommand(query, connection.connection);
+
+            c.Parameters.AddWithValue("@cedula", cliente.Cedula);
+            c.Parameters.AddWithValue("@nombre", cliente.Nombre);
+
             return c;
         }
 
