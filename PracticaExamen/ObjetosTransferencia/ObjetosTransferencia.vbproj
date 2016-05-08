@@ -79,6 +79,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="TOCliente.vb" />
+    <Compile Include="TOFactura.vb" />
+    <Compile Include="TOListaProductos.vb" />
     <Compile Include="TOProducto.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,9 @@ namespace InterfazGrafica
     public partial class CrearFactura : Form
     {
 
-
+        private Producto p;
+        private Factura f;
+        private ListaClientes listaClientes;
 
         public CrearFactura()
         {
@@ -23,14 +25,15 @@ namespace InterfazGrafica
 
         private void CrearFactura_Load(object sender, EventArgs e)
         {
-
+            f = new Factura();
+            listaClientes = new ListaClientes();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
-                Producto p = new Producto();
+                p = new Producto();
                 String cod = txtCod.Text;
 
                 p = p.buscarme(cod);
@@ -44,6 +47,21 @@ namespace InterfazGrafica
                 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (this.p != null)
+            {
+                f.Detalle.agregar(p);
+                txtTotal.Text = f.Detalle.total().ToString();
+                refresh();
+            }
+        }
+
+        private void refresh() {
+            datagridDetalle.DataSource = null;
+            this.datagridDetalle.DataSource = f.Detalle.obtener();
         }
     }
 }

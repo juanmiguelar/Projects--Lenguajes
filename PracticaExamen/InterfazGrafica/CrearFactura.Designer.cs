@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datagridDetalle = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtCod = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -39,20 +39,22 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.cbxClientes = new System.Windows.Forms.ComboBox();
             this.lblClientes = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridDetalle)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // datagridDetalle
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 35);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(507, 198);
-            this.dataGridView1.TabIndex = 0;
+            this.datagridDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.datagridDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridDetalle.Location = new System.Drawing.Point(38, 35);
+            this.datagridDetalle.Name = "datagridDetalle";
+            this.datagridDetalle.ReadOnly = true;
+            this.datagridDetalle.Size = new System.Drawing.Size(507, 198);
+            this.datagridDetalle.TabIndex = 0;
             // 
             // btnAgregar
             // 
@@ -62,6 +64,7 @@
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtCod
             // 
@@ -142,13 +145,13 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Total: ";
             // 
-            // textBox3
+            // txtTotal
             // 
-            this.textBox3.Location = new System.Drawing.Point(67, 435);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtTotal.Location = new System.Drawing.Point(67, 435);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtTotal.TabIndex = 11;
             // 
             // btnAceptar
             // 
@@ -184,7 +187,7 @@
             this.Controls.Add(this.lblClientes);
             this.Controls.Add(this.cbxClientes);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscar);
@@ -195,11 +198,11 @@
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datagridDetalle);
             this.Name = "CrearFactura";
             this.Text = "CrearFactura";
             this.Load += new System.EventHandler(this.CrearFactura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridDetalle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,7 +210,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datagridDetalle;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.TextBox txtPrecio;
@@ -218,7 +221,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.ComboBox cbxClientes;
         private System.Windows.Forms.Label lblClientes;
