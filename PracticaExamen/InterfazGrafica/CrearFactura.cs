@@ -21,12 +21,14 @@ namespace InterfazGrafica
         public CrearFactura()
         {
             InitializeComponent();
+            
         }
 
         private void CrearFactura_Load(object sender, EventArgs e)
         {
             f = new Factura();
             listaClientes = new ListaClientes();
+            refreshcbx();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -55,13 +57,34 @@ namespace InterfazGrafica
             {
                 f.Detalle.agregar(p);
                 txtTotal.Text = f.Detalle.total().ToString();
-                refresh();
+                refreshDatagrid();
             }
         }
 
-        private void refresh() {
+        private void refreshDatagrid() {
             datagridDetalle.DataSource = null;
             this.datagridDetalle.DataSource = f.Detalle.obtener();
+        }
+
+        private void refreshcbx() {
+
+            cbxClientes.DataSource = null;
+            listaClientes.cargar();
+            cbxClientes.DataSource = listaClientes.obtener();
+            cbxClientes.DisplayMember = "Nombre";
+            cbxClientes.ValueMember = "Cedula";
+        }
+
+        private void cbxClientes_Click(object sender, EventArgs e)
+        {
+            refreshcbx();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Cliente client = (Cliente)cbxClientes.SelectedItem;
+            f.Cliente = client;
+            f.Fecha = DateTime.Now;
         }
     }
 }

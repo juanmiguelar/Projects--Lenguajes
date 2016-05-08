@@ -161,6 +161,7 @@
             this.btnAceptar.TabIndex = 12;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // cbxClientes
             // 
@@ -169,6 +170,7 @@
             this.cbxClientes.Name = "cbxClientes";
             this.cbxClientes.Size = new System.Drawing.Size(121, 21);
             this.cbxClientes.TabIndex = 13;
+            this.cbxClientes.Click += new System.EventHandler(this.cbxClientes_Click);
             // 
             // lblClientes
             // 

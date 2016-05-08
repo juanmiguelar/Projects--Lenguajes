@@ -1,4 +1,7 @@
-﻿Public Class Factura
+﻿Imports ObjetosTransferencia
+Imports AccesoDatos
+
+Public Class Factura
     Property ID_Factura As Integer
     Property Fecha As Date
     Property Cliente As Cliente
@@ -34,4 +37,23 @@
         Me.Detalle = New ListaProductos()
     End Sub
 
+    Sub guardar()
+        Dim daof As DAOFactura = New DAOFactura()
+        Dim tol As TOListaProductos = listaTO()
+        Dim toc As TOCliente = New TOCliente(Me.Cliente.Cedula, Me.Cliente.Nombre)
+        Dim tof As TOFactura = New TOFactura(Me.Fecha, toc, tol, Me.Detalle.total)
+
+        'Guardar
+
+    End Sub
+
+    Private Function listaTO() As TOListaProductos
+        Dim tol As TOListaProductos = New TOListaProductos()
+
+        For Each p As Producto In Me.Detalle.obtener()
+            tol.lista.Add(New TOProducto(p.Codigo, p.Descripcion, p.Precio))
+        Next
+
+        Return tol
+    End Function
 End Class

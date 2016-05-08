@@ -20,6 +20,7 @@ Public Class ListaClientes
     End Function
 
     Sub cargar()
+        lista = New List(Of Cliente)
         Dim daoC As DAOCliente = New DAOCliente()
 
         For Each c As TOCliente In daoC.cargar
