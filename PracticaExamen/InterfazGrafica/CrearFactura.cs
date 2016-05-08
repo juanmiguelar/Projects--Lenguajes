@@ -86,7 +86,23 @@ namespace InterfazGrafica
             f.Cliente = client;
             f.ID_Factura = f.guardar();
 
-            MessageBox.Show("Su numero de factura es: " + f.ID_Factura);
+            DialogResult d = MessageBox.Show("Su numero de factura es: " + f.ID_Factura, "Su compra ha sido tramitada", MessageBoxButtons.OK);
+
+            if (d == DialogResult.OK)
+            {
+                clean();
+            }
+        }
+
+        private void clean() {
+            f = new Factura();
+            listaClientes = new ListaClientes();
+            refreshcbx();
+            refreshDatagrid();
+            txtCod.Text = String.Empty;
+            txtDescripcion.Text = String.Empty;
+            txtPrecio.Text = String.Empty;
+            txtTotal.Text = String.Empty;
         }
     }
 }
