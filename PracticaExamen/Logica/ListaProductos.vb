@@ -1,6 +1,6 @@
 ﻿Public Class ListaProductos
     Private lista As List(Of Producto)
-    Property numeroFactura As Integer
+    Property numeroFactura As String
 
     Sub New()
         lista = New List(Of Producto)

@@ -37,15 +37,17 @@ Public Class Factura
         Me.Detalle = New ListaProductos()
     End Sub
 
-    Sub guardar()
+    Function guardar() As Integer
         Dim daof As DAOFactura = New DAOFactura()
         Dim tol As TOListaProductos = listaTO()
         Dim toc As TOCliente = New TOCliente(Me.Cliente.Cedula, Me.Cliente.Nombre)
         Dim tof As TOFactura = New TOFactura(Me.Fecha, toc, tol, Me.Detalle.total)
 
         'Guardar
+        tof = daof.guardar(tof)
 
-    End Sub
+        Return tof.ID_Factura
+    End Function
 
     Private Function listaTO() As TOListaProductos
         Dim tol As TOListaProductos = New TOListaProductos()

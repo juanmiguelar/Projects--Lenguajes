@@ -84,7 +84,9 @@ namespace InterfazGrafica
         {
             Cliente client = (Cliente)cbxClientes.SelectedItem;
             f.Cliente = client;
-            f.Fecha = DateTime.Now;
+            f.ID_Factura = f.guardar();
+
+            MessageBox.Show("Su numero de factura es: " + f.ID_Factura);
         }
     }
 }
