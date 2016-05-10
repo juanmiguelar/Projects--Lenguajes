@@ -43,6 +43,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Disenno.cs" />
     <Compile Include="Guardable.cs" />
+    <Compile Include="ListaDisennos.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
